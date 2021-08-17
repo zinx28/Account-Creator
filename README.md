@@ -44,7 +44,7 @@ Go to https://discord.com/developers/applications sign in (ig you already have a
 	After make a new chrome tab then past the link on top 
 	then add it to your server!
 	
-	
+	Now your discord bot is set up!
 # Please Dont Skid This Please
 
 NOTE : YOU CAN EDIT THIS TO MAKE YOU OWN THING WHAT MIGHT NOT BE NOTHING LIKE FORTNITE
