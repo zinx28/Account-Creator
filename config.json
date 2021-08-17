@@ -1,0 +1,5 @@
+{
+	"prefix": "!",
+	"log": "[log]",
+	"mon" : "PUT-MONGODB-HERE"
+}

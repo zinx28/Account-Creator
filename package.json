@@ -1,0 +1,26 @@
+{
+  "name": "CloudBotV1",
+  "version": "1.0.0",
+  "description": "CloudBot V1 <br> is pog",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "discord.js": "^12.5.3",
+    "mongoose": "^5.13.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zinx-YT/CloudBotV1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zinx-YT/CloudBotV1/issues"
+  },
+  "homepage": "https://github.com/zinx-YT/CloudBotV1#readme"
+}
