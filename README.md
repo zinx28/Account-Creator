@@ -29,8 +29,22 @@ Go to https://www.mongodb.com/cloud/atlas and signup and then sign in
 	 
 	Now your Mongoose is set up! -- this was taken from Rocket (it was Cloud V2) 
 
+# How to Setup other stuff
+Go to https://discord.com/developers/applications sign in (ig you already have a account)
+<br><br>
 
-
+	Click on New Application and the then Choose a Name
+	After that Click on the bot tab then click 'add bot'
+	Where it says token click 'COPY'
+	in index.js at the bottom where it says 'PUT-TOKEN-HERE' with what you just copied
+	
+	Go to the tab 'OAuth2' and then where it says 'SCOPES' click bot
+	After that where it says 'BOT PERMISSIONS' click 'Administrator'
+	then you done that, In 'SCOPES' there should now be a link click 'COPY'
+	After make a new chrome tab then past the link on top 
+	then add it to your server!
+	
+	
 # Please Dont Skid This Please
 
 NOTE : YOU CAN EDIT THIS TO MAKE YOU OWN THING WHAT MIGHT NOT BE NOTHING LIKE FORTNITE
