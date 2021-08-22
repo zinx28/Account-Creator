@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = 'C!';
+const prefix = 'R!';
 const fs = require('fs');
 client.cmdlist = new Discord.Collection();
 const config = require(`./config.json`);
