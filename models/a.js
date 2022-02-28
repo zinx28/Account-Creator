@@ -5,10 +5,7 @@ const data101 = mongooes.Schema({
         type: String,
         required: true,
     },
-    userId: {
-       type: String,
-       required: true,
-    },
+    discord: String,
     createdAt: {
         type: Date,
         default: new Date()
