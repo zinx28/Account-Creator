@@ -1,9 +1,10 @@
 # Account-Creator
-This is a simple Fortnite Account Creator (making fortnite dev accounts) + (This is a discord Bot)
+This is a simple Account Creator for making accounts and also a discord Bot!
 <br><br>
 This will be connected with mongodb
-This Will Only Have Making the account + and changing the username (one account per person)
-(You Must Have A Fortnite Backend Whats Connected to Mongodb what grabs the account)
+This Will Only Have Making the account + and changing the username (one account per discord user)
+(You Must Have A Backend/Code Whats Connected to Mongodb what grabs the account)
+
 # How to Setup MongoDB?
 <br>
 Go to https://www.mongodb.com/cloud/atlas and signup and then sign in 
