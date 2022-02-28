@@ -9,6 +9,7 @@ module.exports.run = async (client, message, args) => {
             {name: 'setup-user, signup', value: `Make an account ${config.prefix}signup {username} Eg : ${config.prefix}signup Account123`},
             {name: 'change-username, username', value: 'Changes the account Username'},
             {name: 'change-password, password', value: 'Changes the account Password'},
+            {name: 'delete, del', value: 'Deletes your account if you got one'},
         );
         message.channel.send(embed)
 }
