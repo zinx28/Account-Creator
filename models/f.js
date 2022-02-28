@@ -6,10 +6,7 @@ const schema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    userId: {
-       type: String,
-       required: true,
-    },
+    discord: String,
     incoming: {
         type: Array,
         default: []
