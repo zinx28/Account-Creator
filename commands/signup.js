@@ -42,7 +42,7 @@ module.exports.run = async (client, message, args) => {
                     ReadyBOI = true
                     const newMadeDataF = new Data3({
                         id: idBOI,
-                        userId: message.author.id
+                        discord: message.author.id
                     })
                     newMadeDataF.save().catch(err1 => console.log(err1))
 
@@ -51,7 +51,7 @@ module.exports.run = async (client, message, args) => {
                         id: idBOI,
                         createdAt: new Date(),
                         allowsGifts: true,
-                        userId: message.author.id,
+                        discord: message.author.id,
                         displayName: reason,
                         email: reason + "@Fortnite.Dev",
                         password: bcrypt.hashSync(idBOI, bcrypt.genSaltSync(10))
@@ -61,7 +61,7 @@ module.exports.run = async (client, message, args) => {
                     //CC
                     const newMadeDataCC = new Data2({
                         id: idBOI,
-                        userId: message.author.id,
+                        discord: message.author.id,
                         mtxplatform: "EpicPC"
                     })
                     newMadeDataCC.save().catch(err1 => console.log(err1))
@@ -69,11 +69,11 @@ module.exports.run = async (client, message, args) => {
                     //Athena
                     const newMadeDataA = new Data1({
                         id: idBOI,
-                        userId: message.author.id,
+                        discord: message.author.id,
                     })
                     newMadeDataA.save().catch(err1 => console.log(err1))
                     // gotta work on this message
-                    return message.channel.send(`Account Created Email : ${reason + "@Fortnite.Dev"} Password: ${idBOI}`)
+                    return message.channel.send(`Account Created Email : ${reason + "@Account.Dev"} Password: ${idBOI}`)
                 }
             }
             )
@@ -136,7 +136,7 @@ module.exports.run = async (client, message, args) => {
                     // I Gotta Add DM Thingy (Make Sure Your Dms are on or bot will crash i think)
                     newMadeDataA.save().catch(err1 => console.log(err1))
                     // gotta work on this message
-                    message.member.send(`Account Created Email : ${reason + "@Fortnite.Dev"} Password: ${idBOI}`)
+                    message.member.send(`Account Created Email : ${reason + "@Account.Dev"} Password: ${idBOI}`)
                     message.reply('I sent you your info!');
 
 
