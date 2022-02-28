@@ -45,6 +45,6 @@ Go to https://discord.com/developers/applications sign in (ig you already have a
 	then add it to your server!
 	
 	Now your discord bot is set up!
-# Please Dont Skid This Please
-
-NOTE : YOU CAN EDIT THIS TO MAKE YOU OWN THING WHAT MIGHT NOT BE NOTHING LIKE FORTNITE
+# Please note:
+models/a.js was not mine please just add your own stuff in there ofc
+YOU CAN EDIT THIS TO MAKE YOU OWN JUST DONT SKID IT
