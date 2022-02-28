@@ -1,4 +1,6 @@
 # Account-Creator
+Feel free to pull request stuff!
+<br><br>
 This is a simple Account Creator for making accounts and also a discord Bot!
 <br><br>
 This will be connected with mongodb
@@ -28,7 +30,7 @@ Go to https://www.mongodb.com/cloud/atlas and signup and then sign in
 	in config.json, replace the text "PUT-MONGODB-HERE" with what you just copied 
 	For the last step replace the password section of the text you just pasted with your Mongo accounts password.
 	 
-	Now your Mongoose is set up! -- this was taken from Rocket (it was Cloud V2) 
+	Now your Mongoose is set up!
 
 # How to Setup other stuff
 Go to https://discord.com/developers/applications sign in (ig you already have a account)
