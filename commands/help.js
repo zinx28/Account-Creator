@@ -17,5 +17,5 @@ module.exports.config = {
     description: "",
     usage: "!help",
     accessableby: "Members",
-    aliases: []
+    aliases: ['h']
 }
