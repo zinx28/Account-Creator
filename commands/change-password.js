@@ -1,3 +1,4 @@
+const Discord = require("discord.js");
 const mongoose = require('mongoose');
 const config = require(`../config.json`);
 const crypto = require("crypto");
@@ -42,11 +43,15 @@ module.exports.run = async (client, message, args) => {
                 if (err) console.log(err);
                 const reason = args.slice(1).join(" ") || null
                 if (Getdata) { } else {
-                    return message.reply(`You dont have an account! Please do ${config.prefix}setup-user {username} in DMs with me eg : ${config.prefix}setup-user FortniteDev`)
+                    return message.reply(`You dont have an account! Please do ${config.prefix}setup-user {username} in DMs with me eg : ${config.prefix}setup-user Account123`)
                 }
                 if (!reason == ! null) return message.channel.send(`Failed to change password.The Password Cant be null.`);
                 Data.collection.updateOne({ "userId": message.author.id }, { $set: { "password": bcrypt.hashSync(reason, bcrypt.genSaltSync(10)) } })
-                return message.channel.send(`Updated your Password to ${reason}! (relog to show the change)`)
+                const embed = new Discord.MessageEmbed()
+                    .setColor('#0077FC')
+                    .setTitle('Password Changed')
+                    .setDescription(`Updated your Password to ${reason}! (relog to show the change)`);
+                return message.reply(embed)
             })
         }
     })
