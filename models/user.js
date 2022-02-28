@@ -5,7 +5,6 @@ const data101 = mongooes.Schema({
     "displayName":String,
     "email":String,
     "password":String,
-    "userId": String,
     "discord": String
 })
 
