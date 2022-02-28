@@ -13,7 +13,7 @@ const data101 = mongooes.Schema({
         type: String,
         default: "EpicPC"
     },
-    userId: String
+    discord: String
 })
 
 module.exports = mongooes.model("commoncores", data101);
