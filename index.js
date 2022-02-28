@@ -8,7 +8,6 @@ client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 
 client.once('ready', () => {
-	console.log(`${config.log} Bot Online :D`);
 	console.log(`${config.log} ${client.user.tag} is online.`)
 	client.user.setActivity("Fortnite", { type: "PLAYING" })
 });
