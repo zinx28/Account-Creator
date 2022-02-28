@@ -6,7 +6,7 @@ module.exports.run = async (client, message, args) => {
         .setTitle('Help')
         .addFields(
             {name: 'Prefix', value: `${config.prefix}`},
-            {name: 'setup-user, signup', value: `Make an account ${config.prefix}signup {username} Eg : ${config.prefix}signup FortniteDev`},
+            {name: 'setup-user, signup', value: `Make an account ${config.prefix}signup {username} Eg : ${config.prefix}signup Account123`},
             {name: 'change-username, username', value: 'Changes the account Username'},
         );
         message.channel.send(embed)
