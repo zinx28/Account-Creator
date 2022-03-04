@@ -17,7 +17,7 @@ mongoose.connect(`${config.mon}`, {
 
 module.exports.run = async (client, message, args) => {
     Data.findOne({
-        userId: message.author.id
+        discord: message.author.id
     }, (err, Getdata) => {
         if (err) console.log(err);
         if (Getdata) { } else {
