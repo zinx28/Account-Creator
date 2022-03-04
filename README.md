@@ -51,3 +51,5 @@ Go to https://discord.com/developers/applications sign in (ig you already have a
 # Please note:
 models/a.js was not mine please just add your own stuff in there ofc
 YOU CAN EDIT THIS TO MAKE YOU OWN JUST DONT SKID IT
+<br>
+This supports discord.js 12.5.3
