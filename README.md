@@ -39,7 +39,7 @@ Go to https://discord.com/developers/applications sign in (ig you already have a
 	Click on New Application and the then Choose a Name
 	After that Click on the 'bot tab' then click 'add bot'
 	Where it says token click 'COPY'
-	in index.js at the bottom where it says 'PUT-TOKEN-HERE' with what you just copied
+	in config.json where it says 'PUT-DISCORD-TOKEN-HERE' with what you just copied
 	
 	Go to the tab 'OAuth2' and then 'URL Generator' where it says 'SCOPES' click bot
 	After that where it says 'BOT PERMISSIONS' click 'Administrator'
