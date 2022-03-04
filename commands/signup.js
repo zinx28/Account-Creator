@@ -21,7 +21,7 @@ const Data3 = require('../models/f')
 module.exports.run = async (client, message, args) => {
     if (message.channel.type === "dm") {
         Data.findOne({
-            userId: message.author.id
+            discord: message.author.id
         }, (err, Getdata) => {
             const reason = args.slice(1).join(" ") || null
             if (!Getdata) { } else {
