@@ -31,7 +31,7 @@ Go to https://www.mongodb.com/cloud/atlas and signup and then sign in
 	Now your Mongoose is set up!
 
 # How to Setup discord bot / token
-Go to https://discord.com/developers/applications sign in (ig you already have a account)
+Go to https://discord.com/developers/applications sign in to your discord account
 <br><br>
 
 	Click on New Application and the then Choose a Name
