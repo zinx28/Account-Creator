@@ -1,6 +1,4 @@
 # Account-Creator
-Feel free to pull request stuff!
-<br><br>
 This is a simple Account Creator for making accounts and also a discord Bot!
 <br><br>
 This will be connected with mongodb
@@ -48,8 +46,15 @@ Go to https://discord.com/developers/applications sign in (ig you already have a
 	then add it to your server!
 	
 	Now your discord bot is set up!
+# Bugs or issues
+Known Issues: <br><br>
+
+	If the persons dms are off while using the signup command the bot will crash or give errors!
+	
+	Any bugs you found tell me
+	Feel free to pull request stuff!
 # Please note:
-models/a.js was not mine please just add your own stuff in there ofc
-YOU CAN EDIT THIS TO MAKE YOU OWN JUST DONT SKID IT
-<br>
-This supports discord.js 12.5.3
+	models/a.js was not mine please just add your own stuff in there ofc
+	YOU CAN EDIT THIS TO MAKE YOU OWN JUST DONT SKID IT
+	<br>
+	This supports discord.js 12.5.3
