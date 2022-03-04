@@ -8,7 +8,7 @@ client.aliases = new Discord.Collection();
 
 client.once('ready', () => {
 	console.log(`${config.log} ${client.user.tag} is online.`)
-	client.user.setActivity("Fortnite", { type: "PLAYING" })
+	client.user.setActivity("Creating accounts!", { type: "PLAYING" })
 });
 fs.readdir("./commands/", (err, files) => {
 	if (err) console.log(err)
@@ -40,4 +40,4 @@ client.on("message", async message => {
 	if (commandfile) commandfile.run(client, message, args)
 })
 
-client.login('PUT-TOKEN-HERE');
+client.login(config.token);
