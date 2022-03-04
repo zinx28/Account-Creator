@@ -13,7 +13,7 @@ mongoose.connect(`${config.mon}`, {
 
 module.exports.run = async (client, message, args) => {
     Data.findOne({
-        userId: message.author.id
+        discord: message.author.id
     }, (err, Getdata) => {
         if (err) console.log(err);
         const reason = args.slice(1).join(" ") || null
@@ -28,7 +28,7 @@ module.exports.run = async (client, message, args) => {
                     return message.channel.send(`Username is already in use please try again (run ${config.prefix}setup-user again)`)
                 }
             } else {
-                Data.collection.updateOne({ "userId": message.author.id }, { $set: { "displayName": reason } })
+                Data.collection.updateOne({ "discord": message.author.id }, { $set: { "displayName": reason } })
                 const embed = new Discord.MessageEmbed()
                     .setColor('#0077FC')
                     .setTitle('Username Changed')
