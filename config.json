@@ -1,5 +1,6 @@
 {
 	"prefix": "!",
 	"log": "[log]",
-	"mon" : "PUT-MONGODB-HERE"
+	"mon": "PUT-MONGODB-HERE",
+	"token": "PUT-DISCORD-TOKEN-HERE"
 }
