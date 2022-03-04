@@ -21,7 +21,7 @@ module.exports.run = async (client, message, args) => {
     }, (err, Getdata) => {
         if (err) console.log(err);
         if (Getdata) { } else {
-            return message.reply(`You dont have an account!3`)
+            return message.reply(`You dont have an account!`)
         }
 
         Data.collection.findOneAndDelete({ "discord": message.author.id })
