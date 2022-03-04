@@ -15,7 +15,7 @@ mongoose.connect(`${config.mon}`, {
 
 module.exports.run = async (client, message, args) => {
     Data.findOne({
-        userId: message.author.id
+        discord: message.author.id
     }, (err, Getdata) => {
         if (err) console.log(err);
         const reason = args.slice(1).join(" ") || null
@@ -46,7 +46,7 @@ module.exports.run = async (client, message, args) => {
                     return message.reply(`You dont have an account! Please do ${config.prefix}setup-user {username} in DMs with me eg : ${config.prefix}setup-user Account123`)
                 }
                 if (!reason == ! null) return message.channel.send(`Failed to change password.The Password Cant be null.`);
-                Data.collection.updateOne({ "userId": message.author.id }, { $set: { "password": bcrypt.hashSync(reason, bcrypt.genSaltSync(10)) } })
+                Data.collection.updateOne({ "discord": message.author.id }, { $set: { "password": bcrypt.hashSync(reason, bcrypt.genSaltSync(10)) } })
                 const embed = new Discord.MessageEmbed()
                     .setColor('#0077FC')
                     .setTitle('Password Changed')
