@@ -1,4 +1,3 @@
-// nothing here...
 const Discord = require("discord.js");
 const mongoose = require('mongoose');
 const config = require(`../config.json`);
@@ -20,9 +19,7 @@ module.exports.run = async (client, message, args) => {
         discord: message.author.id
     }, (err, Getdata) => {
         if (err) console.log(err);
-        if (Getdata) { } else {
-            return message.reply(`You dont have an account!`)
-        }
+        if (Getdata) { 
 
         Data.collection.findOneAndDelete({ "discord": message.author.id })
         Data1.collection.findOneAndDelete({ "discord": message.author.id })
@@ -33,6 +30,12 @@ module.exports.run = async (client, message, args) => {
             .setTitle('Deleted Your Account')
             .setDescription("Your account is now deleted");
         return message.reply(embed)
+
+        } else {
+            return message.reply(`You dont have an account!`)
+        }
+
+       
     })   
 }
 
