@@ -127,8 +127,13 @@ module.exports.run = async (client, message, args) => {
                     // I Gotta Add DM Thingy (Make Sure Your Dms are on or bot will crash i think)
                     newMadeDataA.save().catch(err1 => console.log(err1))
                     // gotta work on this message
-                    message.member.send(`Account Created Email : ${reason + "@Account.Dev"} Password: ${idBOI}`)
-                    message.reply('I sent you your info!');
+                    try{
+                         message.member.send(`Account Created Email : ${reason + "@Account.Dev"} Password: ${idBOI}`)
+                         message.reply('I sent you your info!');
+                    }catch{
+                        message.reply("Please turn on your dms")
+                    }
+                   
 
 
                 }
