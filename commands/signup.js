@@ -3,15 +3,6 @@ const mongoose = require('mongoose');
 const crypto = require("crypto");
 const bcrypt = require("bcrypt");
 const config = require(`../config.json`);
-//Connect
-mongoose.connect(`${config.mon}`, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => {
-    console.log(`${config.log} Connected to the database!`);
-}).catch((err) => {
-    console.log(err);
-})
 
 const Data = require('../models/user')
 const Data1 = require('../models/a')
