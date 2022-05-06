@@ -4,14 +4,6 @@ const config = require(`../config.json`);
 const crypto = require("crypto");
 const bcrypt = require("bcrypt");
 const Data = require('../models/user');
-mongoose.connect(`${config.mon}`, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => {
-    console.log(`${config.log} Connected to the database!`);
-}).catch((err) => {
-    console.log(err);
-})
 
 module.exports.run = async (client, message, args) => {
     Data.findOne({
