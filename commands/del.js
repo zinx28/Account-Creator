@@ -5,14 +5,6 @@ const Data = require('../models/user')
 const Data1 = require('../models/a')
 const Data2 = require('../models/cc')
 const Data3 = require('../models/f')
-mongoose.connect(`${config.mon}`, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => {
-    console.log(`${config.log} Connected to the database!`);
-}).catch((err) => {
-    console.log(err);
-})
 
 module.exports.run = async (client, message, args) => {
     Data.findOne({
