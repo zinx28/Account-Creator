@@ -1,8 +1,17 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const fs = require('fs');
-client.cmdlist = new Discord.Collection();
 const config = require(`./config.json`);
+mongoose.connect(`${config.mon}`, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}).then(() => {
+    console.log(`${config.log} Connected to the database!`);
+}).catch((err) => {
+    console.log(err);
+})
+
+client.cmdlist = new Discord.Collection();
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 
