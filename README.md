@@ -49,8 +49,6 @@ Go to https://discord.com/developers/applications sign in to your discord accoun
 # Bugs or issues
 Known Issues: <br><br>
 
-	If the persons dms are off while using the signup command the bot will crash or give errors!
-	
 	Any bugs you found tell me
 	Feel free to pull request stuff!
 # Please note:
