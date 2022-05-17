@@ -80,7 +80,7 @@ module.exports.run = async (client, message, args) => {
                 return message.channel.send("Failed to create account. The username may already be taken or you might already have an account")
             }
             if (!reason == ! null) return message.channel.send(`Failed to create account. The username may already be taken or you might already have an account.`);
-            Data.findOne({ 'displayName': reason }, (err1, DataBOI1) => {
+            Data.findOne({ 'displayName': reason }, async (err1, DataBOI1) => {
                 if (DataBOI1) {
                     if (DataBOI1.displayName == reason.toString()) {
                         ReadyBOI = false
@@ -125,10 +125,11 @@ module.exports.run = async (client, message, args) => {
 
 
                     // I Gotta Add DM Thingy (Make Sure Your Dms are on or bot will crash i think)
-                    newMadeDataA.save().catch(err1 => console.log(err1))
+                   
                     // gotta work on this message
                     try{
-                         message.member.send(`Account Created Email : ${reason + "@Account.Dev"} Password: ${idBOI}`)
+                         await message.member.send(`Account Created Email : ${reason + "@Account.Dev"} Password: ${idBOI}`)
+                         newMadeDataA.save().catch(err1 => console.log(err1))
                          message.reply('I sent you your info!');
                     }catch{
                         message.reply("Please turn on your dms")
