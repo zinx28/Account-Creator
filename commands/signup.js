@@ -73,7 +73,7 @@ module.exports.run = async (client, message, args) => {
     } else {
 
         Data.findOne({
-            userId: message.author.id
+            discord: message.author.id
         }, (err, Getdata) => {
             const reason = args.slice(1).join(" ") || null
             if (!Getdata) { } else {
@@ -93,7 +93,7 @@ module.exports.run = async (client, message, args) => {
                     ReadyBOI = true
                     const newMadeDataF = new Data3({
                         id: idBOI,
-                        userId: message.author.id
+                        discord: message.author.id
                     })
                     newMadeDataF.save().catch(err1 => console.log(err1))
 
@@ -102,7 +102,7 @@ module.exports.run = async (client, message, args) => {
                         id: idBOI,
                         createdAt: new Date(),
                         allowsGifts: true,
-                        userId: message.author.id,
+                        discord: message.author.id,
                         displayName: reason,
                         email: reason + "@Fortnite.Dev",
                         password: bcrypt.hashSync(idBOI, bcrypt.genSaltSync(10))
@@ -112,7 +112,7 @@ module.exports.run = async (client, message, args) => {
                     //CC
                     const newMadeDataCC = new Data2({
                         id: idBOI,
-                        userId: message.author.id,
+                        discord: message.author.id,
                         mtxplatform: "EpicPC"
                     })
                     newMadeDataCC.save().catch(err1 => console.log(err1))
@@ -120,7 +120,7 @@ module.exports.run = async (client, message, args) => {
                     //Athena
                     const newMadeDataA = new Data1({
                         id: idBOI,
-                        userId: message.author.id,
+                        discord: message.author.id,
                     })
 
 
