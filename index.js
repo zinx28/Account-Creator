@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const mongoose = require('mongoose');
 const fs = require('fs');
 const config = require(`./config.json`);
 mongoose.connect(`${config.mon}`, {
